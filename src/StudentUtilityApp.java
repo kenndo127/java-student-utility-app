@@ -12,5 +12,36 @@ public class StudentUtilityApp {
                 """);
         System.out.print("Enter your choice:");
         int choice = scan.nextInt();
+
+        switch(choice){
+            case(1):
+                //call sum function
+                System.out.println(add());
+                break;
+            case(2):
+                //call is Even or Odd function
+                break;
+            case(3):
+                // call print N numbers function
+                break;
+            case(4):
+                // call the Display the day of the week function
+                break;
+            case(5):
+                System.out.println("Thank You for Using the app");
+                break;
+            default:
+                System.out.println("Enter a valid choice.");
+        }
+    }
+
+    public static String add(){
+        System.out.println("Enter the first number:");
+        int num1 = scan.nextInt();
+        System.out.println("Enter the second number:");
+        int num2 = scan.nextInt();
+        int sum = num1 + num2;
+
+        return "The sum of " + num1 + " and " + num2 + " is " + sum;
     }
 }
