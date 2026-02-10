@@ -10,7 +10,7 @@ public class StudentUtilityApp {
                 4. Display day of the week
                 5. Exit
                 """);
-        System.out.print("Enter your choice:");
+        System.out.print("Enter your choice: ");
         int choice = scan.nextInt();
 
         switch(choice){
@@ -20,6 +20,7 @@ public class StudentUtilityApp {
                 break;
             case(2):
                 //call is Even or Odd function
+                System.out.println(isEvenOrOdd());
                 break;
             case(3):
                 // call print N numbers function
@@ -36,12 +37,18 @@ public class StudentUtilityApp {
     }
 
     public static String add(){
-        System.out.println("Enter the first number:");
+        System.out.println("Enter the first number: ");
         int num1 = scan.nextInt();
-        System.out.println("Enter the second number:");
+        System.out.println("Enter the second number: ");
         int num2 = scan.nextInt();
         int sum = num1 + num2;
 
         return "The sum of " + num1 + " and " + num2 + " is " + sum;
+    }
+    public static String isEvenOrOdd(){
+        System.out.print("Enter a number: ");
+        int num = scan.nextInt();
+
+        return ((num % 2) == 0) ? "Even" : "Odd";
     }
 }
