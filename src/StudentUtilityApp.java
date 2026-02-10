@@ -24,6 +24,7 @@ public class StudentUtilityApp {
                 break;
             case(3):
                 // call print N numbers function
+                printN();
                 break;
             case(4):
                 // call the Display the day of the week function
@@ -50,5 +51,13 @@ public class StudentUtilityApp {
         int num = scan.nextInt();
 
         return ((num % 2) == 0) ? "Even" : "Odd";
+    }
+    public static void printN(){
+        System.out.print("Enter a number: ");
+        int num = scan.nextInt();
+
+        for(int i = 1; i <= num; i++){
+            System.out.println(i);
+        }
     }
 }
